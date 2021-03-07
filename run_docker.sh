@@ -15,4 +15,7 @@ docker run --rm  \
     --volume=$xsock:$xsock:rw \
     --volume=$xauth:$xauth:rw \
     --device=/dev/dri:/dev/dri \
+    --volume="/etc/group:/etc/group:ro"   \
+    --volume="/etc/passwd:/etc/passwd:ro" \
+    --volume="/etc/shadow:/etc/shadow:ro" \
     robotikainspace/moon-final:darknet  /bin/bash
