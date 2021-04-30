@@ -4,7 +4,7 @@ ARCH="gpu-cv-cc86"
 DOCKER_REPO="robotikainspace/moon-final"
 SOURCE_BRANCH="master"
 SOURCE_COMMIT=`git ls-remote https://github.com/AlexeyAB/darknet.git ${SOURCE_BRANCH} | awk '{ print $1 }'`
-DOCKER_TAG="darknet"
+DOCKER_TAG="darknet-$ARCH"
 
   echo $DOCKER_REPO
   echo $SOURCE_BRANCH
